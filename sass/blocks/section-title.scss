@@ -1,0 +1,26 @@
+.section-title {       
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    &__subtitle {
+        font-size: 21px;
+        line-height: normal;
+    }
+    &--black {
+        font-size: 47px;
+        font-weight: 700;
+        justify-content: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    &__subtitle--black {
+        font-size: 21px;
+        justify-content: center;
+        line-height: normal;
+        color: black;
+        max-width: 410px;
+        text-align: center;
+        margin-bottom: 57px;
+    }
+}

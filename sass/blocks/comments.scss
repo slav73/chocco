@@ -3,15 +3,29 @@
     font-family: $alegreya;
     &__page {
         @include page;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__header {
-        display: flex;
-        background-color: red;
+        display:flex;
+        flex-direction: column;
+        align-items: center;  
     }
     &__title {
         text-transform: uppercase;
         color: red;
         font-size: 48px;
         font-weight: 700;
+    }
+    &__decor--leaf2 {
+        top: 188px;
+        left: 0;
+        position: absolute;
+        opacity: 0.2;
+    }
+    &__decor--berries2 {
+        position: absolute;
+        bottom: 40px;
     }
 }

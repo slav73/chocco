@@ -1,27 +1,32 @@
 .chocco {
     display:flex;
+    padding-top: 24px;
+    background-color: #61c4d9;
     background: url("../img/bg/watermark.png") center center / cover no-repeat;
     &__page {
-        @include page;
+        @include page;       
     }
     &__desc {
         display: flex;
         flex-direction: column;
         font-family: $alegreya;
         color: #fff;
-        margin-top: 100px;
+        line-height: 1;
     }
     &__content {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        padding-left: 80px; 
+        height: 90%; 
     }
-    &__title {       
-        font-size: 60px;
-        font-weight: 700;
-        text-transform: uppercase;
+    &__main {
+        display:flex;
     }
-    &__subtitle {
-        font-size: 22px;
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content-picture {
+        margin-left: 80px;
     }
 }

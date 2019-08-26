@@ -1,14 +1,22 @@
 .why {
     display:flex;
     font-family: $alegreya;
+    .section:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        background: url('./img/bg/leaf.png') no-repeat; 
+    }
     &__page {
         @include page;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__header {
         display:flex;
         flex-direction: column;
         align-items: center;  
-        margin: 115px 350px 57px;  
     }
     &__content {
         margin: 0 80px;

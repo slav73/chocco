@@ -1,0 +1,18 @@
+.menu {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 27px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+}

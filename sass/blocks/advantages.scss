@@ -1,6 +1,6 @@
 .advantages {
     display: flex;
-    margin-top: 70px;
+    justify-content: flex-start;
     &__list {
         display: flex;
         justify-content: space-between;
@@ -8,21 +8,39 @@
     &__item {
         display: flex;
         align-items: flex-start;
-        margin-right: 26px;
+        margin-right: 55px;
     }
     &__item:last-child {
         margin-right: 0;
     }
     &__icon {
         display: block;
-        margin-right: 10px;
-        flex-shrink: 0;
+        margin-right: 8px;
     }
     &__link {
-        display: inline-block;
         text-decoration: none;
         color: #fff;
         font-size: 16px;
         vertical-align: top;
+        max-width: 70px;
     }
+    &__link:hover {
+        cursor: pointer;
+    }  
+    &:after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        bottom: -100px;
+        width: 100px;
+        height: 100px;
+        background: url("../img/decors/decors1.png") no-repeat; 
+    }
+    &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        background: url('../img/decors/leaf-left.png') no-repeat; 
+    }  
+
 }
