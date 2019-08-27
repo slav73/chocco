@@ -5,6 +5,26 @@
     background: url("../img/bg/watermark.png") center center / cover no-repeat;
     &__page {
         @include page;       
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 450px;
+            left: 550px;
+            width: 460px;
+            height: 341px;
+            background: url("../img/decors/decors1.png") no-repeat; 
+        }
+        &::before {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 680px;
+            left: 0;
+            width: 59px;
+            height: 112px;
+            background: url('../img/decors/leaf-left.png') no-repeat; 
+        }
     }
     &__desc {
         display: flex;

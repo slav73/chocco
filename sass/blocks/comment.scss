@@ -1,20 +1,37 @@
 .comment {
     display: flex;
     justify-content: space-between;
-    background: url('../img/bg/branch.png')  center center no-repeat;
-    margin: 0 80px 25px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 27px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 940px;
+        height: 345px;
+        z-index: 0;
+        background: url('../img/bg/branch.png')  center center / cover no-repeat;
+    }
     &__user-photo {
         margin: 50px 20px 35px 45px;
+        width: 253px;
+        height: 259px;
+        z-index: 1;
     }
     &__text {
-        margin: 68px 188px 0 0;
+        margin: 68px 150px 0 0;
+        z-index: 1;
     }
     &__title {
         font-size: 30px;
         font-weight: 500;
     }
     &__desc {
+        display: flex;
         font-size: 18px;
+        overflow: hidden;
         font-weight: 400;
         margin-bottom: 32px;
     }
@@ -24,4 +41,3 @@
         font-weight: 500;
     }
 }
-

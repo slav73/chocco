@@ -1,17 +1,31 @@
 .why {
     display:flex;
     font-family: $alegreya;
-    .section:before {
+    &::before {
         content: '';
-        z-index: 1;
         position: absolute;
-        background: url('./img/bg/leaf.png') no-repeat; 
+        width: 191px;
+        height: 314px;
+        top: 210px;
+        left: 0;
+        opacity: 0.2;
+        background: url('../img/bg/leaf.png') no-repeat; 
     }
     &__page {
         @include page;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 750px;
+            left: 0;
+            width: 161px;
+            height: 315px;
+            background: url("../img/pictures/raspberry.png") no-repeat; 
+        }
     }
     &__header {
         display:flex;
@@ -40,6 +54,20 @@
         flex-direction: column;
         align-items: center;
         margin-right: 80px;
+        position: relative;
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 56px;
+            left: 216px;
+            width: 67px;
+            height: 21px;
+            background: url("../img/bg/gray-circles.png") no-repeat; 
+        }
+        &:last-child::after {
+            display: none;
+        }    
     }
     &__item:last-child {
         margin-right: 0;

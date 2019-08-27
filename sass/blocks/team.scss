@@ -1,16 +1,98 @@
 .team {
-    display:flex;
+    display: flex;
     font-family: $alegreya;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 346px;
+        opacity: 0.2;
+        background: url('../img/bg/watermark3.png') center center / cover no-repeat; 
+    }
     &__page {
         @include page;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: 0;
+            width: 135px;
+            height: 112px;
+            background: url('../img/pictures/blueberries.png') center center / cover no-repeat; 
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 104px;
+            height: 114px;
+            background: url('../img/pictures/berry.png') center center / cover no-repeat; 
+        }
     }
     &__header {
         display:flex;
-        flex-direction: column;
-        align-items: center;  
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 58px; 
     }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        &--photo {
+            width: 220px;
+            height: 288px;
+            margin-bottom: 26px;;
+        }
+        &--name {
+            font-size: 21px;
+            font-weight: 500;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -15px; 
+                bottom: 10px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid #0f5a47;
+                background: transparent;
+            }
+        }
+    }
+    &__member--active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-name::after {
+            border-bottom: 10px solid #0f5a47;
+        }
+        &-position {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-desc {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+    &__member:last-child {
+        margin: 0;
+    }    
 }

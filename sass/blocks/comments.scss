@@ -6,26 +6,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 150px;
+            height: 86px;
+            background: url('../img/pictures/strawberry.png') center center / cover no-repeat; 
+        }
     }
     &__header {
         display:flex;
         flex-direction: column;
-        align-items: center;  
-    }
-    &__title {
-        text-transform: uppercase;
-        color: red;
-        font-size: 48px;
-        font-weight: 700;
-    }
-    &__decor--leaf2 {
-        top: 188px;
-        left: 0;
-        position: absolute;
-        opacity: 0.2;
-    }
-    &__decor--berries2 {
-        position: absolute;
-        bottom: 40px;
+        align-items: center;
+        margin-bottom: 44px;  
     }
 }

@@ -27,20 +27,4 @@
     &__link:hover {
         cursor: pointer;
     }  
-    &:after {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        bottom: -100px;
-        width: 100px;
-        height: 100px;
-        background: url("../img/decors/decors1.png") no-repeat; 
-    }
-    &:before {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        background: url('../img/decors/leaf-left.png') no-repeat; 
-    }  
-
 }

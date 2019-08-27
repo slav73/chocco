@@ -1,0 +1,29 @@
+.consist {
+    display: flex;
+    font-family: $alegreya;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 246px;
+        opacity: 0.2;
+        background: url('../img/bg/watermark2.png') center center / cover no-repeat; 
+    }
+    &__page {
+        @include page;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__header {
+        display:flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

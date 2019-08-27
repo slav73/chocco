@@ -360,8 +360,9 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 940px;
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
@@ -409,10 +410,27 @@ footer {
   background: url("../img/bg/watermark.png") center center/cover no-repeat;
 }
 .chocco__page {
-  width: 940px;
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
+  height: 100%;
+}
+.chocco__page::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 450px;
+  left: 550px;
+  width: 460px;
+  height: 341px;
+  background: url("../img/decors/decors1.png") no-repeat;
+}
+.chocco__page::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 680px;
+  left: 0;
+  width: 59px;
+  height: 112px;
+  background: url("../img/decors/leaf-left.png") no-repeat;
 }
 .chocco__desc {
   display: flex;
@@ -494,6 +512,7 @@ footer {
   justify-content: center;
   text-transform: uppercase;
   color: black;
+  text-align: center;
 }
 .section-title__subtitle--black {
   font-size: 21px;
@@ -553,21 +572,6 @@ footer {
 .advantages__link:hover {
   cursor: pointer;
 }
-.advantages:after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  bottom: -100px;
-  width: 100px;
-  height: 100px;
-  background: url("../img/decors/decors1.png") no-repeat;
-}
-.advantages:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  background: url("../img/decors/leaf-left.png") no-repeat;
-}
 
 .decors {
   display: flex;
@@ -610,20 +614,31 @@ footer {
   display: flex;
   font-family: "Alegreya Sans", sans-serif;
 }
-.why .section:before {
+.why::before {
   content: "";
-  z-index: 1;
   position: absolute;
-  background: url("./img/bg/leaf.png") no-repeat;
+  width: 191px;
+  height: 314px;
+  top: 210px;
+  left: 0;
+  opacity: 0.2;
+  background: url("../img/bg/leaf.png") no-repeat;
 }
 .why__page {
-  width: 940px;
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.why__page::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 750px;
+  left: 0;
+  width: 161px;
+  height: 315px;
+  background: url("../img/pictures/raspberry.png") no-repeat;
 }
 .why__header {
   display: flex;
@@ -652,6 +667,20 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-right: 80px;
+  position: relative;
+}
+.why__item::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 56px;
+  left: 216px;
+  width: 67px;
+  height: 21px;
+  background: url("../img/bg/gray-circles.png") no-repeat;
+}
+.why__item:last-child::after {
+  display: none;
 }
 .why__item:last-child {
   margin-right: 0;
@@ -699,54 +728,62 @@ footer {
   font-family: "Alegreya Sans", sans-serif;
 }
 .comments__page {
-  width: 940px;
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.comments__page::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 150px;
+  height: 86px;
+  background: url("../img/pictures/strawberry.png") center center/cover no-repeat;
 }
 .comments__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.comments__title {
-  text-transform: uppercase;
-  color: red;
-  font-size: 48px;
-  font-weight: 700;
-}
-.comments__decor--leaf2 {
-  top: 188px;
-  left: 0;
-  position: absolute;
-  opacity: 0.2;
-}
-.comments__decor--berries2 {
-  position: absolute;
-  bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .comment {
   display: flex;
   justify-content: space-between;
-  background: url("../img/bg/branch.png") center center no-repeat;
-  margin: 0 80px 25px;
+  width: 90%;
+  position: relative;
+  margin-bottom: 27px;
+}
+.comment::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 940px;
+  height: 345px;
+  z-index: 0;
+  background: url("../img/bg/branch.png") center center/cover no-repeat;
 }
 .comment__user-photo {
   margin: 50px 20px 35px 45px;
+  width: 253px;
+  height: 259px;
+  z-index: 1;
 }
 .comment__text {
-  margin: 68px 188px 0 0;
+  margin: 68px 150px 0 0;
+  z-index: 1;
 }
 .comment__title {
   font-size: 30px;
   font-weight: 500;
 }
 .comment__desc {
+  display: flex;
   font-size: 18px;
+  overflow: hidden;
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -816,6 +853,135 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.consist {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.consist::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 246px;
+  opacity: 0.2;
+  background: url("../img/bg/watermark2.png") center center/cover no-repeat;
+}
+.consist__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.consist__header {
+  display: flex;
+  flex-direction: column;
+}
+.consist__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 346px;
+  opacity: 0.2;
+  background: url("../img/bg/watermark3.png") center center/cover no-repeat;
+}
+.team__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__page::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 135px;
+  height: 112px;
+  background: url("../img/pictures/blueberries.png") center center/cover no-repeat;
+}
+.team__page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 104px;
+  height: 114px;
+  background: url("../img/pictures/berry.png") center center/cover no-repeat;
+}
+.team__header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.team__member--photo {
+  width: 220px;
+  height: 288px;
+  margin-bottom: 26px;
+}
+.team__member--name {
+  font-size: 21px;
+  font-weight: 500;
+  position: relative;
+}
+.team__member--name::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #0f5a47;
+  background: transparent;
+}
+.team__member--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__member--active-name::after {
+  border-bottom: 10px solid #0f5a47;
+}
+.team__member--active-position {
+  font-size: 18px;
+  font-weight: 500;
+}
+.team__member--active-desc {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+.team__member:last-child {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
