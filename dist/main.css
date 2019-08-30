@@ -416,7 +416,7 @@ footer {
   content: "";
   display: flex;
   position: absolute;
-  top: 450px;
+  bottom: -150px;
   left: 550px;
   width: 460px;
   height: 341px;
@@ -426,8 +426,8 @@ footer {
   content: "";
   display: flex;
   position: absolute;
-  top: 680px;
-  left: 0;
+  bottom: -50px;
+  left: -60px;
   width: 59px;
   height: 112px;
   background: url("../img/decors/leaf-left.png") no-repeat;
@@ -496,6 +496,12 @@ footer {
   color: #fff;
 }
 
+.tel__number--green {
+  color: #0f5a47;
+  font-size: 21px;
+  font-weight: 400;
+}
+
 .section-title {
   font-size: 60px;
   font-weight: 700;
@@ -512,6 +518,14 @@ footer {
   justify-content: center;
   text-transform: uppercase;
   color: black;
+  text-align: center;
+}
+.section-title--green {
+  font-size: 47px;
+  font-weight: 700;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #0f5a47;
   text-align: center;
 }
 .section-title__subtitle--black {
@@ -624,21 +638,21 @@ footer {
   opacity: 0.2;
   background: url("../img/bg/leaf.png") no-repeat;
 }
+.why::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  width: 161px;
+  height: 315px;
+  background: url("../img/pictures/raspberry.png") no-repeat;
+}
 .why__page {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.why__page::after {
-  content: "";
-  display: flex;
-  position: absolute;
-  top: 750px;
-  left: 0;
-  width: 161px;
-  height: 315px;
-  background: url("../img/pictures/raspberry.png") no-repeat;
 }
 .why__header {
   display: flex;
@@ -741,6 +755,16 @@ footer {
   width: 150px;
   height: 86px;
   background: url("../img/pictures/strawberry.png") center center/cover no-repeat;
+}
+.comments__page::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 193px;
+  bottom: -90px;
+  left: 0;
+  z-index: 1;
+  background: url("../img/pictures/berries2.png") no-repeat;
 }
 .comments__header {
   display: flex;
@@ -918,7 +942,7 @@ footer {
 .team__page::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   width: 104px;
   height: 114px;
@@ -982,6 +1006,312 @@ footer {
 }
 .team__member:last-child {
   margin: 0;
+}
+
+.work {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+  background: #f8faf9;
+}
+.work::before {
+  content: "";
+  position: absolute;
+  width: 102px;
+  height: 321px;
+  top: -130px;
+  left: 0;
+  background: url("../img/bg/leaf2.png") no-repeat;
+}
+.work__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.work__page::before {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  width: 72px;
+  height: 135px;
+  z-index: 2;
+  background: url("../img/pictures/leaf4.png") center center/cover no-repeat;
+}
+.work__page::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 77px;
+  top: 90px;
+  right: -80px;
+  background: url("../img/pictures/leaf5.png") center center/cover no-repeat;
+}
+
+.assortment {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.assortment::after {
+  content: "";
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background: url("../img/menu/picture.png") center center/cover no-repeat;
+}
+.assortment__page {
+  height: 100%;
+  display: flex;
+}
+
+.delivery {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+  background: url("../img/delivery/pattern.png") center center/cover;
+}
+.delivery::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: 0;
+  width: 197px;
+  height: 264px;
+  z-index: 1;
+  background: url("../img/pictures/blackberry.png") center center/cover no-repeat;
+}
+.delivery__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.delivery__page::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 40;
+  width: 47px;
+  height: 48px;
+  z-index: 1;
+  background: url("../img/pictures/blueberry.png") center center/cover no-repeat;
+}
+.delivery__page::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 188px;
+  bottom: 90px;
+  right: -80px;
+  background: url("../img/pictures/leaf3.png") center center/cover no-repeat;
+}
+
+.map {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.map__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.map__page__picture {
+  width: 100%;
+}
+
+.address {
+  color: #0f5a47;
+  font-size: 21px;
+  font-weight: 400;
+  padding-top: 26px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+}
+.socials__list {
+  display: flex;
+  padding-top: 46px;
+}
+.socials__item {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-form {
+  display: flex;
+  justify-content: center;
+}
+.order-form__row {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.order-form__column {
+  display: flex;
+  flex-direction: column;
+}
+.order-form__row-textarea {
+  margin-bottom: 15px;
+}
+.order-form__block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.order-form__input {
+  border: 0;
+  border-radius: 3px;
+  height: 35px;
+  width: 55px;
+  font-size: 14px;
+}
+.order-form .__input-textarea {
+  height: 75px;
+  width: 250px;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 15px;
+  padding-top: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  resize: none;
+}
+
+.form__block-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.form__input-textarea:hover {
+  border: 1px solid #4b73b5;
+}
+
+.form__radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  padding-left: 35px;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.radio-container input:checked {
+  color: #4b73b5;
+}
+
+input:checked + span {
+  color: red;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container input:checked ~ .checkmark {
+  border: 1px solid #4b73b5;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #4b73b5;
+  border-radius: 50%;
+}
+
+.form__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 45px;
+  border: none;
+  background-color: #4b73b5;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 3px;
+}
+
+.form__button-text:hover {
+  background-color: #fff;
+  color: #4b73b5;
+}
+
+.form__button-text:after {
+  content: "";
+  display: inline-block;
+  margin-left: 7px;
+  width: 15px;
+  height: 14px;
+  background: url("./img/icons/send/css_sprites.png") -10px -10px;
+}
+
+.form__button-text:hover:after {
+  background-position: -45px -10px;
 }
 
 /*# sourceMappingURL=main.css.map */
