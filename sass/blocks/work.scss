@@ -1,0 +1,39 @@
+.work {
+    display: flex;
+    font-family: $alegreya;
+    background: #f8faf9;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 102px;
+        height: 321px;
+        top: -130px;
+        left: 0;
+        background: url('../img/bg/leaf2.png') no-repeat; 
+    }
+    &__page {
+        @include page;
+        display: flex;
+        flex-direction: column;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+            width: 72px;
+            height: 135px;
+            z-index: 2;
+            background: url('../img/pictures/leaf4.png') center center / cover no-repeat; 
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 77px;
+            top: 90px;
+            right: -80px;
+            
+            background: url('../img/pictures/leaf5.png') center center / cover no-repeat; 
+        }
+    }
+}

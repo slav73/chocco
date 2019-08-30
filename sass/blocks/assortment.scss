@@ -1,0 +1,19 @@
+.assortment {
+    display: flex;
+    font-family: $alegreya;
+    &::after {
+        content: "";
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: -1;   
+        background: url('../img/menu/picture.png') center center / cover no-repeat; 
+      }
+    &__page {
+        @include page;
+        display: flex;
+    }
+}

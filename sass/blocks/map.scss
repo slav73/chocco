@@ -1,0 +1,12 @@
+.map {
+    display: flex;
+    font-family: $alegreya;
+    &__page {
+        @include page;
+        display: flex;
+        flex-direction: column;
+        &__picture {
+            width: 100%;
+        }
+    }
+}

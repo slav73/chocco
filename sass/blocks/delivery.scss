@@ -1,0 +1,42 @@
+.delivery {
+    display: flex;
+    font-family: $alegreya;
+    background: url('../img/delivery/pattern.png') center center / cover; 
+    &::before {
+        content: '';
+        position: absolute;
+        top: -150px;
+        right: 0;
+        width: 197px;
+        height: 264px;
+        z-index: 1;
+        background: url('../img/pictures/blackberry.png') center center / cover no-repeat; 
+    }
+    &__page {
+        @include page;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 50px;
+            left: 40;
+            width: 47px;
+            height: 48px;
+            z-index: 1;
+            background: url('../img/pictures/blueberry.png') center center / cover no-repeat; 
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 135px;
+            height: 188px;
+            bottom: 90px;
+            right: -80px;
+            
+            background: url('../img/pictures/leaf3.png') center center / cover no-repeat; 
+        }
+    }
+}
