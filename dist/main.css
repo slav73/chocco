@@ -776,7 +776,6 @@ footer {
 .comment {
   display: flex;
   justify-content: space-between;
-  width: 90%;
   position: relative;
   margin-bottom: 27px;
 }
