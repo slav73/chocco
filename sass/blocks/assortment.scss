@@ -16,4 +16,9 @@
         @include page;
         display: flex;
     }
+    &__header {
+        position: absolute;
+        left: 80px;
+        top: 100px;
+    }
 }

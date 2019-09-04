@@ -10,6 +10,12 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 30px;
+    &--green {
+        background: $dark;
+        color: #fff;
+        margin-right: 30px;
+        margin-top: 0;
+    }
 }
 .order:hover {
     cursor: pointer;
