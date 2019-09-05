@@ -794,7 +794,6 @@ a {
 
 .comment {
   display: flex;
-  justify-content: space-between;
   position: relative;
   margin-bottom: 27px;
 }
@@ -815,7 +814,8 @@ a {
   z-index: 1;
 }
 .comment__text {
-  margin: 68px 150px 0 0;
+  margin: 68px 0 0;
+  max-width: 440px;
   z-index: 1;
 }
 .comment__title {
