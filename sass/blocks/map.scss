@@ -1,5 +1,6 @@
 .map {
     display: flex;
+    flex-direction: column;
     font-family: $alegreya;
     &__page {
         @include page;

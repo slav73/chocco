@@ -45,6 +45,10 @@
         font-weight: 400;
         padding-left: 15px;
         padding-top: 5px;
+        &:focus {
+            outline: 3px solid #dde3bd;
+            border: none;
+        }
     }
     &__input-textarea {
         height: 180px;
@@ -56,9 +60,10 @@
         border: 1px solid transparent;
         border-radius: 3px;
         resize: none;
-    }
-    &__input-textarea:hover {
-        border: 1px solid #4b73b5;
+        &:focus {
+            outline: 3px solid #dde3bd;
+            border: none;
+        }
     }
         
     &__radio-buttons {
@@ -72,8 +77,6 @@
         position: relative;
         cursor: pointer;
         font-size: 14px;
-        width: 20px;
-        height: 20px;
         padding-left: 35px;
     }
         

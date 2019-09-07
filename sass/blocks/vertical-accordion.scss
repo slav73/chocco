@@ -12,7 +12,7 @@
     &__item {
         &:hover {
             .vertical-accordion__wrap-content {
-                width: 100%;
+                width: 544px;
             }
         }
     }
@@ -28,7 +28,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.8;
         }
     }
     &__trigger--1 {
