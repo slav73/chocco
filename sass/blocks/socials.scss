@@ -2,18 +2,42 @@
     display: flex;
     &__list {
         display: flex;
-        padding-top: 46px;
+        padding-top: rem(46px);
     }
     &__item {
-        width: 20px;
-        height: 20px;
-        margin-right: 20px;
+        width: rem(20px);
+        height: rem(20px);
+        margin-right: rem(20px);
     }
     &__icon {
-        opacity: 0.3;
-        &:hover {
-            opacity: 1;
-            cursor: pointer;  
-        }
+        @include social;
+    }
+    &__bg-vk {
+        @include social;
+        width: rem(23px); 
+        height: rem(13px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/socials.png') rem(-130px) rem(-10px);
+    }
+    &__bg-fb {
+        @include social;
+        width: rem(20px); 
+        height: rem(20px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/socials.png') rem(-50px) rem(-10px);
+    }
+    &__bg-fb {
+        @include social;
+        width: rem(20px); 
+        height: rem(20px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/socials.png') rem(-90px) rem(-10px);
+    }
+    &__bg-twit {
+        @include social;
+        width: rem(20px); 
+        height: rem(16px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/socials.png') rem(-10px) rem(-10px);
     }
 }

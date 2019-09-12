@@ -1,6 +1,10 @@
 .advantages {
     display: flex;
     justify-content: flex-start;
+    @include tablets {
+        justify-content: center;
+        align-items: center;
+    }
     &__list {
         display: flex;
         justify-content: space-between;
@@ -8,23 +12,41 @@
     &__item {
         display: flex;
         align-items: flex-start;
-        margin-right: 55px;
+        margin-right: rem(55px);
     }
     &__item:last-child {
         margin-right: 0;
     }
     &__icon {
         display: block;
-        margin-right: 8px;
+        margin-right: rem(8px);
     }
     &__link {
         text-decoration: none;
         color: #fff;
-        font-size: 16px;
+        font-size: rem(16px);
         vertical-align: top;
-        max-width: 70px;
+        max-width: rem(70px);
     }
     &__link:hover {
         cursor: pointer;
     }  
+    &__bg-natural {
+        width: rem(44px); 
+        height: rem(41px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/advantages.png') -72px -10px;
+    }
+    &__bg-slim {
+        width: rem(50px); 
+        height: rem(40px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/advantages.png') -136px -10px;
+    }
+    &__bg-supply {
+        width: rem(42px); 
+        height: rem(42px);
+        margin-right: rem(8px);
+        background: url('../img/sprites/advantages.png') rem(-10px) rem(-10px);
+    }
 }

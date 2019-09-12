@@ -3,7 +3,10 @@
     justify-content: space-between;
     align-content: center;
     color: #fff;
-    margin-bottom: 90px;
+    margin-bottom: rem(90px);
+    @include tablets {
+        margin-bottom: 0;
+    }
     &__left {
         display: flex;
         flex-direction: column;
@@ -12,11 +15,17 @@
         display: flex; 
         justify-content: space-between;       
         align-items: center;
+        @include tablets {
+            display: none;
+        }
     }
     &__right {
-        font-size: 24px;
+        font-size: rem(24px);
         font-weight: 400;
         display: flex;
         align-items: center;
+        @include tablets {
+            display: none;
+        }
     }
 }

@@ -5,10 +5,10 @@
     &::before {
         content: '';
         position: absolute;
-        top: -150px;
+        top: rem(-150px);
         right: 0;
-        width: 197px;
-        height: 264px;
+        width: rem(197px);
+        height: rem(264px);
         z-index: 1;
         background: url('../img/pictures/blackberry.png') center center / cover no-repeat; 
     }
@@ -21,20 +21,20 @@
         &::before {
             content: '';
             position: absolute;
-            bottom: 50px;
-            left: 40px;
-            width: 47px;
-            height: 48px;
+            bottom: rem(50px);
+            left: rem(40px);
+            width: rem(47px);
+            height: rem(48px);
             z-index: 1;
             background: url('../img/pictures/blueberry.png') center center / cover no-repeat; 
         }
         &::after {
             content: '';
             position: absolute;
-            width: 135px;
-            height: 188px;
-            bottom: 90px;
-            right: -80px;
+            width: rem(135px);
+            height: rem(188px);
+            bottom: rem(90px);
+            right: rem(-80px);
             
             background: url('../img/pictures/leaf3.png') center center / cover no-repeat; 
         }

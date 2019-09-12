@@ -5,8 +5,8 @@
     }
     &__item {
         display: inline-block;
-        font-size: 18px;
-        margin-right: 27px;
+        font-size: rem(18px);
+        margin-right: rem(27px);
     }
     &__item:last-child {
         margin-right: 0;

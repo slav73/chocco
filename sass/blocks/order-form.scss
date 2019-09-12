@@ -5,14 +5,21 @@
     &__title {
         display: flex;
         width: 100%;
+        @include tablets {
+            flex-direction: column;
+        }
     }
     &__row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
         &--order {
             justify-content: left;
             align-items: center;
+            @include tablets {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
     &__column {
@@ -21,51 +28,56 @@
         flex-direction: column;
     }
     &__row-textarea {
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
     }
     &__block {
         display: flex;
         flex: 1;
         flex-direction: column;
-        margin-right: 20px;
+        margin-right: rem(20px);
     }
     &__block-title {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         color: #0f5a47;
-        margin-right: 23px;
-        margin-left: 7px;
+        margin-right: rem(23px);
+        margin-left: rem(7px);
     }
     &__input {
         border: 0;
-        border-radius: 3px;
-        height: 60px;
+        border-radius: rem(3px);
+        height: rem(60px);
         width: 100%;
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
-        padding-left: 15px;
-        padding-top: 5px;
+        padding-left: rem(15px);
+        padding-top: rem(5px);
         &:focus {
-            outline: 3px solid #dde3bd;
+            outline: rem(3px) solid #dde3bd;
             border: none;
         }
     }
     &__input-textarea {
-        height: 180px;
+        height: rem(180px);
         width: 100%;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
-        padding-left: 15px;
-        padding-top: 5px;
-        border: 1px solid transparent;
-        border-radius: 3px;
+        padding-left: rem(15px);
+        padding-top: rem(5px);
+        border: rem(1px) solid transparent;
+        border-radius: rem(3px);
         resize: none;
         &:focus {
-            outline: 3px solid #dde3bd;
+            outline: rem(3px) solid #dde3bd;
             border: none;
         }
     }
-        
+    &__radio {
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+    }    
     &__radio-buttons {
         display: flex;
         justify-content: space-between;
@@ -76,8 +88,8 @@
         align-items: center;
         position: relative;
         cursor: pointer;
-        font-size: 14px;
-        padding-left: 35px;
+        font-size: rem(14px);
+        padding-left: rem(35px);
     }
         
     &__radio-button {
@@ -90,18 +102,18 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 24px;
-        height: 24px;
-        margin: 0 7px;
+        width: rem(24px);
+        height: rem(24px);
+        margin: 0 rem(7px);
         background-color: #fff;
         border-radius: 50%;
         &::after {
             content:"";
             position: absolute;
-            top: 5px;
-            left: 5px;
-            width: 12px;
-            height: 12px;
+            top: rem(5px);
+            left: rem(5px);
+            width: rem(12px);
+            height: rem(12px);
             opacity: 0;
             display: block;
             background-color: #0f5a47;
@@ -115,7 +127,7 @@
         
         
     &__radio-button:checked ~ .order-form__checkmark {
-        border: 1px solid #4b73b5;
+        border: rem(1px) solid #4b73b5;
     }
                
     &__radio-button:checked + .order-form__checkmark::after {
@@ -127,10 +139,10 @@
         align-items: center;
         position: relative;
         cursor: pointer;
-        font-size: 14px;
-        width: 20px;
-        height: 20px;
-        padding-left: 35px;
+        font-size: rem(14px);
+        width: rem(20px);
+        height: rem(20px);
+        padding-left: rem(35px);
     }
 
     &__checkbox {
@@ -143,17 +155,17 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 24px;
-        height: 24px;
-        margin: 0 8px;
+        width: rem(24px);
+        height: rem(24px);
+        margin: 0 rem(8px);
         background-color: #fff;
         &::after {
             content:"\2714";
             position: absolute;
-            top: 3px;
-            left: 6px;
-            width: 12px;
-            height: 12px;
+            top: rem(3px);
+            left: rem(6px);
+            width: rem(12px);
+            height: rem(12px);
             opacity: 0;
             display: block;
             color: #0f5a47;
@@ -166,7 +178,7 @@
     }
                 
     &__checkbox:checked ~ .order-form__boxmark {
-        border: 1px solid #4b73b5;
+        border: rem(1px) solid #4b73b5;
     }
                
     &__checkbox:checked + .order-form__boxmark::after {
@@ -174,51 +186,13 @@
     }
 
     &__call {
-        margin-bottom: 40px;
+        margin-bottom: rem(40px);
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
     }
         
 }
 
 
-
-.form__button {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.form__button-text {
-display:  flex;
-align-items: center;
-justify-content: center;
-width: 155px;
-height: 45px;
-border: none;
-background-color: #4b73b5;
-border-radius: 3px;
-color: #fff;
-font-size: 12px;
-letter-spacing: 2px;
-font-weight: 700;
-text-transform: uppercase;
-margin-right: 3px;
-}
-
-.form__button-text:hover {
-background-color: #fff;
-color: #4b73b5;
-}
-
-
-.form__button-text:after {
-content: "";
-display: inline-block;
-margin-left: 7px;
-width: 15px; 
-height: 14px;
-background: url('./img/icons/send/css_sprites.png') -10px -10px;
-}
-
-.form__button-text:hover:after {
-background-position: -45px -10px;
-}

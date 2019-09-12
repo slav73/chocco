@@ -12,15 +12,15 @@
     &__item {
         &:hover {
             .vertical-accordion__wrap-content {
-                width: 544px;
+                width: rem(544px);
             }
         }
     }
     &__trigger {
-        width: 100px;
+        width: rem(100px);
         position: relative;
         justify-content: center;
-        padding-bottom: 42px;
+        padding-bottom: rem(42px);
         &::after {
             content: '';
             position: absolute;
@@ -47,7 +47,7 @@
     }
     &__title {
         color: #fff;
-        font-size: 48px;
+        font-size: rem(48px);
         font-weight: 500;
         z-index: 1;
         writing-mode: vertical-lr;
@@ -56,15 +56,15 @@
     &__wrap-content {
         overflow: hidden;
         width: 0;
-        max-width: 400px;
+        max-width: rem(400px);
         transition: .3s;
     }
     &__content {
         color: #fff;
-        font-size: 16px;
+        font-size: rem(16px);
         font-weight: 400;
-        min-width: 400px;
-        padding: 50px 27px;
+        min-width: rem(400px);
+        padding: rem(50px) rem(27px);
         background: rgba(#2f3234, .93);
     }
 }

@@ -1,3 +1,12 @@
 @mixin page {
     height: 100%;
+    position: relative;
+}
+
+@mixin social {
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;  
+    }
 }

@@ -1,14 +1,14 @@
 .section-title {       
-    font-size: 60px;
+    font-size: rem(60px);
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     &__subtitle {
-        font-size: 21px;
+        font-size: rem(21px);
         line-height: normal;
     }
     &--black {
-        font-size: 47px;
+        font-size: rem(47px);
         font-weight: 700;
         justify-content: center;
         text-transform: uppercase;
@@ -16,7 +16,7 @@
         text-align: center;
     }
     &--white {
-        font-size: 47px;
+        font-size: rem(47px);
         font-weight: 700;
         justify-content: center;
         text-transform: uppercase;
@@ -24,7 +24,7 @@
         text-align: center;
     }
     &--green {
-        font-size: 47px;
+        font-size: rem(47px);
         font-weight: 700;
         justify-content: center;
         text-transform: uppercase;
@@ -32,12 +32,15 @@
         text-align: center;
     }
     &__subtitle--black {
-        font-size: 21px;
+        font-size: rem(21px);
         justify-content: center;
         line-height: normal;
         color: black;
-        max-width: 410px;
+        max-width: rem(410px);
         text-align: center;
-        margin-bottom: 57px;
+        margin-bottom: rem(57px);
+        @include tablets {
+            margin-bottom: rem(30px);
+        }
     }
 }

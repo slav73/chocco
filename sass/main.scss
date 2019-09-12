@@ -5,6 +5,7 @@
 @import "_misc/layout.scss";
 
 @import "settings/vars";
+@import "settings/media";
 
 @import "blocks/section.scss"; 
 @import "blocks/mixins.scss";
@@ -34,3 +35,5 @@
 @import "blocks/footer.scss";
 @import "blocks/order-form.scss";
 @import "blocks/vertical-accordion.scss";
+@import "blocks/hamburger-menu.scss";
+@import "blocks/hamburger-menu-link.scss";

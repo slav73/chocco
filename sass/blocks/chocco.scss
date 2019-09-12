@@ -1,29 +1,41 @@
 .chocco {
     display:flex;
-    padding-top: 24px;
+    padding-top: rem(24px);
     background-color: #61c4d9;
     background: url("../img/bg/watermark.png") center center / cover no-repeat;
     &__page {
-        @include page;       
+        @include page;      
         &::after {
             content: '';
             display: flex;
             position: absolute;
-            bottom: -150px;
-            left: 550px;
-            width: 460px;
-            height: 341px;
+            bottom: rem(-150px);
+            left: rem(550px);
+            width: rem(460px);
+            height: rem(341px);
             background: url("../img/decors/decors1.png") no-repeat; 
+            @include tablets {
+                left: rem(250px);
+                top: rem(200px);
+                width: rem(480px);
+                height: rem(365px);
+            }
         }
         &::before {
             content: '';
             display: flex;
             position: absolute;
-            bottom: -50px;
-            left: -60px;
-            width: 59px;
-            height: 112px;
+            bottom: rem(-50px);
+            left: rem(-60px);
+            width: rem(59px);
+            height: rem(112px);
             background: url('../img/decors/leaf-left.png') no-repeat; 
+            @include tablets {
+                left: rem(20px);
+                top: rem(400px);
+                width: rem(480px);
+                height: rem(365px);
+            }
         }
     }
     &__desc {
@@ -32,6 +44,9 @@
         font-family: $alegreya;
         color: #fff;
         line-height: 1;
+        @include tablets {
+            padding: 0 rem(120px);
+        }
     }
     &__content {
         display: flex;
@@ -41,12 +56,24 @@
     }
     &__main {
         display:flex;
+        @include tablets {
+            flex-direction: column;
+            margin-bottom: rem(40px);
+        }
     }
     &__text {
         display: flex;
         flex-direction: column;
+        @include tablets {
+            text-align: center;
+            align-items: center;
+        }
     }
     &__content-picture {
-        margin-left: 80px;
+        margin-left: rem(80px);
+        @include tablets {
+            order: -1;
+            margin-top: rem(-30px);
+        }
     }
 }

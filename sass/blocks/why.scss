@@ -4,9 +4,9 @@
     &::before {
         content: '';
         position: absolute;
-        width: 191px;
-        height: 314px;
-        top: 210px;
+        width: rem(191px);
+        height: rem(314px);
+        top: rem(210px);
         left: 0;
         opacity: 0.2;
         background: url('../img/bg/leaf.png') no-repeat; 
@@ -15,55 +15,77 @@
         content: '';
         display: flex;
         position: absolute;
-        bottom: -150px;
+        bottom: rem(-150px);
         left: 0;
-        width: 161px;
-        height: 315px;
+        width: rem(161px);
+        height: rem(315px);
         background: url("../img/pictures/raspberry.png") no-repeat; 
+        @include tablets {
+            width: rem(170px);
+            height: rem(340px);
+        }
     }
     &__page {
         @include page;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include tablets {
+            justify-content: flex-start;
+        }
     }
     &__header {
         display:flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
+        @include tablets {
+            padding-top: rem(70px);
+        }  
     }
     &__content {
-        margin: 0 80px;
+        margin: 0 rem(80px);
     }
     &__title {
-        font-size: 48px;
+        font-size: rem(48px);
         font-weight: 700;
         text-transform: uppercase;
     }
     &__subtitle {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         text-align: center;
     }
     &__list {
         display: flex;
         justify-content: center;
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 80px;
+        margin-right: rem(80px);
         position: relative;
+        @include tablets {
+            margin-right: 0;
+            margin-bottom: 20px;
+            padding: 0 15%;
+        }
         &::after {
             content: '';
             display: flex;
             position: absolute;
-            top: 56px;
-            left: 216px;
-            width: 67px;
-            height: 21px;
+            top: rem(56px);
+            left: rem(216px);
+            width: rem(67px);
+            height: rem(21px);
             background: url("../img/bg/gray-circles.png") no-repeat; 
+            @include tablets {
+                display: none;
+            }
         }
         &:last-child::after {
             display: none;
@@ -76,10 +98,25 @@
         display: inline-block;
         position: relative;
         background: $grey;
-        width: 125px;
-        height: 125px;
+        width: rem(125px);
+        height: rem(125px);
         border-radius: 50%;
-        margin-bottom: 35px;
+        margin-bottom: rem(35px);
+        @include tablets {
+            margin-bottom: rem(25px);
+        }
+    }
+    &__useful {
+        content: '';
+        width: rem(75px); 
+        height: rem(64px);
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        background: url('../img/sprites/why.png') rem(-186px) rem(-10px);
     }
     &__icon {
         position: absolute;
@@ -90,23 +127,26 @@
         transform: translate(-50%, -50%);
     }
     &__slogan {
-        font-size: 25px;
+        font-size: rem(25px);
         font-weight: 700;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: rem(25px);
+        @include tablets {
+            margin-bottom: rem(20px);
+        }
     }
     &__subslogan {
-        font-size: 16px;
+        font-size: rem(18px);
         font-weight: 300;
         text-align: center;
     }
     &__decor--leaf {
-        top: 188px;
+        top: rem(188px);
         position: absolute;
         opacity: 0.2;
     }
     &__decor--raspberry {
         position: absolute;
-        bottom: -60px;
+        bottom: rem(-60px);
     }
 }

@@ -1,42 +1,42 @@
 .comment {
     display: flex;
     position: relative;
-    margin-bottom: 27px;
+    margin-bottom: rem(27px);
     &::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        width: 940px;
-        height: 345px;
+        width: rem(940px);
+        height: rem(345px);
         z-index: 0;
         background: url('../img/bg/branch.png')  center center / cover no-repeat;
     }
     &__user-photo {
-        margin: 50px 20px 35px 45px;
-        width: 253px;
-        height: 259px;
+        margin: rem(50px) rem(20px) rem(35px) rem(45px);
+        width: rem(253px);
+        height: rem(259px);
         z-index: 1;
     }
     &__text {
-        margin: 68px 0 0;
-        max-width: 440px;
+        margin: rem(68px) 0 0;
+        max-width: rem(440px);
         z-index: 1;
     }
     &__title {
-        font-size: 30px;
+        font-size: rem(30px);
         font-weight: 500;
     }
     &__desc {
         display: flex;
-        font-size: 18px;
+        font-size: rem(18px);
         overflow: hidden;
         font-weight: 400;
-        margin-bottom: 32px;
+        margin-bottom: rem(32px);
     }
     &__username {
         color: #666666;
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 500;
     }
 }

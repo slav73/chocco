@@ -18,7 +18,7 @@
     }
     &__header {
         position: absolute;
-        left: 80px;
-        top: 100px;
+        left: rem(80px);
+        top: rem(100px);
     }
 }

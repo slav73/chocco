@@ -6,8 +6,8 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 200px;
-        height: 246px;
+        width: rem(200px);
+        height: rem(246px);
         opacity: 0.2;
         background: url('../img/bg/watermark2.png') center center / cover no-repeat; 
     }
@@ -22,7 +22,7 @@
         flex-direction: column;
     }
     &__title {
-        font-size: 40px;
+        font-size: rem(40px);
         font-weight: 700;
         text-transform: uppercase;
     }

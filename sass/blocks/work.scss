@@ -5,9 +5,9 @@
     &::before {
         content: '';
         position: absolute;
-        width: 102px;
-        height: 321px;
-        top: -130px;
+        width: rem(102px);
+        height: rem(321px);
+        top: rem(-130px);
         left: 0;
         background: url('../img/bg/leaf2.png') no-repeat; 
     }
@@ -18,20 +18,20 @@
         &::before {
             content: '';
             position: absolute;
-            bottom: 60px;
-            left: 80px;
-            width: 72px;
-            height: 135px;
+            bottom: rem(60px);
+            left: rem(80px);
+            width: rem(72px);
+            height: rem(135px);
             z-index: 2;
             background: url('../img/pictures/leaf4.png') center center / cover no-repeat; 
         }
         &::after {
             content: '';
             position: absolute;
-            width: 90px;
-            height: 77px;
-            top: 90px;
-            right: -80px;
+            width: rem(90px);
+            height: rem(77px);
+            top: rem(90px);
+            right: rem(-80px);
             
             background: url('../img/pictures/leaf5.png') center center / cover no-repeat; 
         }
