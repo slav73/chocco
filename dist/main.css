@@ -348,7 +348,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -452,6 +452,16 @@ a {
     height: 22.8125rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .chocco__page::after {
+    left: 9.375rem;
+    top: 6.25rem;
+    width: 30rem;
+    height: 28.75rem;
+    width: 100%;
+    height: 100%;
+  }
+}
 .chocco__page::before {
   content: "";
   display: flex;
@@ -468,6 +478,14 @@ a {
     top: 25rem;
     width: 30rem;
     height: 22.8125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__page::before {
+    left: 0.625rem;
+    top: 12.5rem;
+    width: 22.5rem;
+    height: 15.3125rem;
   }
 }
 .chocco__desc {
@@ -514,6 +532,11 @@ a {
   .chocco__content-picture {
     order: -1;
     margin-top: -1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__bars {
+    width: 90%;
   }
 }
 
@@ -770,7 +793,7 @@ a {
 @media screen and (max-width: 768px) {
   .why::after {
     width: 10.625rem;
-    height: 20rem;
+    height: 21.25rem;
   }
 }
 .why__page {
@@ -866,6 +889,18 @@ a {
   .why__circle {
     margin-bottom: 1.5625rem;
   }
+}
+.why__useful {
+  content: "";
+  width: 4.6875rem;
+  height: 4rem;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/sprites/why.png") -11.625rem -0.625rem;
 }
 .why__icon {
   position: absolute;
