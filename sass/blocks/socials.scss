@@ -9,30 +9,35 @@
         height: rem(20px);
         margin-right: rem(20px);
     }
-    &__icon {
+    &__vk {
         @include social;
-    }
-    &__bg-vk {
-        @include social;
-        width: rem(23px); 
-        height: rem(13px);
+        width: rem(25px); 
+        height: rem(25px);
         margin-right: rem(8px);
-        background: url('../img/sprites/socials.png') rem(-130px) rem(-10px);
     }
-    &__bg-fb {
+    &__fb {
         @include social;
-        width: rem(20px); 
-        height: rem(20px);
+        position: relative;
+        width: rem(25px); 
+        height: rem(25px);
         margin-right: rem(8px);
-        background: url('../img/sprites/socials.png') rem(-50px) rem(-10px);
+        cursor: pointer;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #fff;
+            cursor: pointer;
+            width: rem(25px); 
+            height: rem(25px);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
     }
-    &__bg-fb {
-        @include social;
-        width: rem(20px); 
-        height: rem(20px);
-        margin-right: rem(8px);
-        background: url('../img/sprites/socials.png') rem(-90px) rem(-10px);
-    }
+
     &__bg-twit {
         @include social;
         width: rem(20px); 

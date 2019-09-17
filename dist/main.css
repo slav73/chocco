@@ -1379,45 +1379,40 @@ a {
   height: 1.25rem;
   margin-right: 1.25rem;
 }
-.socials__icon {
+.socials__vk {
   opacity: 0.3;
-}
-.socials__icon:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.socials__bg-vk {
-  opacity: 0.3;
-  width: 1.4375rem;
-  height: 0.8125rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/socials.png") -8.125rem -0.625rem;
 }
-.socials__bg-vk:hover {
+.socials__vk:hover {
   opacity: 1;
   cursor: pointer;
 }
-.socials__bg-fb {
+.socials__fb {
   opacity: 0.3;
-  width: 1.25rem;
-  height: 1.25rem;
+  position: relative;
+  width: 1.5625rem;
+  height: 1.5625rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/socials.png") -3.125rem -0.625rem;
+  cursor: pointer;
 }
-.socials__bg-fb:hover {
+.socials__fb:hover {
   opacity: 1;
   cursor: pointer;
 }
-.socials__bg-fb {
-  opacity: 0.3;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 0.5rem;
-  background: url("../img/sprites/socials.png") -5.625rem -0.625rem;
-}
-.socials__bg-fb:hover {
-  opacity: 1;
+.socials__fb:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
   cursor: pointer;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .socials__bg-twit {
   opacity: 0.3;
