@@ -5,6 +5,9 @@
         justify-content: center;
         align-items: center;
     }
+    @include phones {
+        justify-content: space-between;
+    }
     &__list {
         display: flex;
         justify-content: space-between;
@@ -31,22 +34,34 @@
     &__link:hover {
         cursor: pointer;
     }  
-    &__bg-natural {
+    &__natural {
         width: rem(44px); 
-        height: rem(41px);
+        height: rem(44px);
         margin-right: rem(8px);
-        background: url('../img/sprites/advantages.png') -72px -10px;
+        background-color: transparent;
+        fill: transparent;
+        stroke: #fff;
+        stroke-width: rem(1px);
+        cursor: pointer;
     }
-    &__bg-slim {
-        width: rem(50px); 
-        height: rem(40px);
+    &__slim {
+        width: rem(44px); 
+        height: rem(44px);
         margin-right: rem(8px);
-        background: url('../img/sprites/advantages.png') -136px -10px;
+        background-color: transparent;
+        fill: transparent;
+        stroke: #fff;
+        stroke-width: rem(1px);
+        cursor: pointer;
     }
-    &__bg-supply {
-        width: rem(42px); 
-        height: rem(42px);
+    &__supply {
+        width: rem(44px); 
+        height: rem(44px);
         margin-right: rem(8px);
-        background: url('../img/sprites/advantages.png') rem(-10px) rem(-10px);
+        background-color: transparent;
+        fill: transparent;
+        stroke: #fff;
+        stroke-width: rem(1px);
+        cursor: pointer;
     }
 }

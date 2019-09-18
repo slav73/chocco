@@ -452,14 +452,11 @@ a {
     height: 22.8125rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (max-width: 480px) {
   .chocco__page::after {
-    left: 9.375rem;
     top: 6.25rem;
-    width: 30rem;
-    height: 28.75rem;
-    width: 100%;
-    height: 100%;
+    left: 9.375rem;
+    background: url("../img/bg/phones/berries1.png") no-repeat;
   }
 }
 .chocco__page::before {
@@ -482,10 +479,9 @@ a {
 }
 @media screen and (max-width: 480px) {
   .chocco__page::before {
-    left: 0.625rem;
-    top: 12.5rem;
-    width: 22.5rem;
-    height: 15.3125rem;
+    left: 6.25rem;
+    top: 6.25rem;
+    background: url("../img/bg/phones/leafs1.png") no-repeat;
   }
 }
 .chocco__desc {
@@ -532,6 +528,11 @@ a {
   .chocco__content-picture {
     order: -1;
     margin-top: -1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chocco__content-picture {
+    width: 70%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -684,6 +685,11 @@ a {
     align-items: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .advantages {
+    justify-content: space-between;
+  }
+}
 .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -710,23 +716,35 @@ a {
 .advantages__link:hover {
   cursor: pointer;
 }
-.advantages__bg-natural {
+.advantages__natural {
   width: 2.75rem;
-  height: 2.5625rem;
+  height: 2.75rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/advantages.png") -72px -10px;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.0625rem;
+  cursor: pointer;
 }
-.advantages__bg-slim {
-  width: 3.125rem;
-  height: 2.5rem;
+.advantages__slim {
+  width: 2.75rem;
+  height: 2.75rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/advantages.png") -136px -10px;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.0625rem;
+  cursor: pointer;
 }
-.advantages__bg-supply {
-  width: 2.625rem;
-  height: 2.625rem;
+.advantages__supply {
+  width: 2.75rem;
+  height: 2.75rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/advantages.png") -0.625rem -0.625rem;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.0625rem;
+  cursor: pointer;
 }
 
 .decors {
@@ -780,6 +798,11 @@ a {
   opacity: 0.2;
   background: url("../img/bg/leaf.png") no-repeat;
 }
+@media screen and (max-width: 480px) {
+  .why::before {
+    background: none;
+  }
+}
 .why::after {
   content: "";
   display: flex;
@@ -821,6 +844,11 @@ a {
 .why__content {
   margin: 0 5rem;
 }
+@media screen and (max-width: 480px) {
+  .why__content {
+    margin: 0 1.25rem;
+  }
+}
 .why__title {
   font-size: 3rem;
   font-weight: 700;
@@ -853,6 +881,11 @@ a {
     margin-right: 0;
     margin-bottom: 20px;
     padding: 0 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why__item {
+    flex-direction: row;
   }
 }
 .why__item::after {
@@ -891,16 +924,46 @@ a {
   }
 }
 .why__useful {
-  content: "";
-  width: 4.6875rem;
-  height: 4rem;
   position: absolute;
   display: block;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  background: url("../img/sprites/why.png") -11.625rem -0.625rem;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 0.0625rem;
+}
+.why__tasty {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 0.0625rem;
+}
+.why__nutritional {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 0.0625rem;
 }
 .why__icon {
   position: absolute;
@@ -1375,8 +1438,8 @@ a {
   padding-top: 2.875rem;
 }
 .socials__item {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   margin-right: 1.25rem;
 }
 .socials__vk {
@@ -1401,27 +1464,26 @@ a {
   opacity: 1;
   cursor: pointer;
 }
-.socials__fb:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #fff;
-  cursor: pointer;
+.socials__tw {
+  opacity: 0.3;
+  position: relative;
   width: 1.5625rem;
   height: 1.5625rem;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.socials__bg-twit {
-  opacity: 0.3;
-  width: 1.25rem;
-  height: 1rem;
   margin-right: 0.5rem;
-  background: url("../img/sprites/socials.png") -0.625rem -0.625rem;
+  cursor: pointer;
 }
-.socials__bg-twit:hover {
+.socials__tw:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.socials__in {
+  opacity: 0.3;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.socials__in:hover {
   opacity: 1;
   cursor: pointer;
 }
